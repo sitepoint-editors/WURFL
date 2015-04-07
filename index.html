@@ -6,6 +6,7 @@
       
 <body>
 <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <div>
     <ul id="wurfl">
       <li class="is-mobile">Your device is mobile. <span></span>.</li>
@@ -14,5 +15,10 @@
   </ul>
        </div>
 </body>
+<script>
+      $('#wurfl .is-mobile span').html(WURFL.is_mobile);
+$('#wurfl .form-factor span').html( WURFL.form_factor);
+$('#wurfl .device-name span').html( WURFL.complete_device_name);
+</script>
 
 </html>
